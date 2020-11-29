@@ -1,0 +1,57 @@
+@import "~src/app/styles/base.scss";
+
+$loadingColor: lighten(
+    $color: $main-color,
+    $amount: 2,
+);
+
+.app-button {
+    font-family: "Poppins";
+    background-color: $main-color;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-weight: 600;
+    outline: none;
+    padding: 10px 15px;
+    user-select: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    @include children-row-margin(10px);
+
+    &:hover {
+        background-color: darken($color: $main-color, $amount: 2);
+    }
+
+    &:focus {
+        outline: none;
+    }
+
+    &:disabled {
+        background: rgba($cta-secondary, 0.6);
+        cursor: default;
+    }
+
+    &--small {
+        font-size: 14px;
+        padding: 4px 10px;
+    }
+
+    &--border {
+        background-color: transparent;
+        border: 2px solid $main-color;
+    }
+
+    &--loading {
+        &:disabled {
+            background-color: $loadingColor;
+            color: #090909;
+        }
+
+        &:hover {
+            background-color: $loadingColor;
+        }
+    }
+}

@@ -1,0 +1,56 @@
+@import "~src/lib/styles/base.scss";
+
+.sidebar {
+  position: fixed;
+  top: 50px;
+  bottom: 0;
+  left: 0;
+  width: 300px;
+  z-index: 10;
+  background-color: white;
+  box-shadow: 0px 6px 38px rgba(37, 38, 45, 0.12);
+  display: flex;
+  flex-direction: column;
+
+  &-divider {
+    border-top: 1px solid rgba(13, 16, 23, 0.24);
+    height: 1px;
+    margin-bottom: 24px;
+  }
+
+  &__search-bar {
+    margin: 0 12px 24px;
+    padding: 4px 12px;
+    font-size: 16px;
+    border: 1px solid rgba(13, 16, 23, 0.24);
+    border-radius: 4px;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &-item {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding: 8px 12px;
+    border-radius: 4px;
+    color: #0D1017;
+    font-size: 16px;
+
+    &__icon {
+      margin-right: 8px;
+
+      path {
+        fill: #0030AE;
+      }
+    }
+
+    &:hover {
+      background-color: rgba(13, 16, 23, 0.12);
+      text-decoration: none;
+      color: #0D1017;
+    }
+  }
+}

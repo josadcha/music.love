@@ -1,0 +1,22 @@
+{
+    "jsxBracketSameLine": true,
+    "singleQuote": true,
+    "overrides": [
+        {
+            "files": ["**/*.css", "**/*.scss", "**/*.pcss", "**/*.html"],
+            "options": {
+                "singleQuote": false
+            }
+        },
+        {
+            "files": ["**/*.css", "**/*.scss", "**/*.pcss"],
+            "options": {
+                "tabWidth": 4
+            }
+        }
+    ],
+    "jsxSingleQuote": false,
+    "printWidth": 120,
+    "tabWidth": 4,
+    "endOfLine": "auto"
+}

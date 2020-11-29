@@ -1,0 +1,17 @@
+@import "~src/app/styles/base.scss";
+
+.account {
+    display: flex;
+    align-items: center;
+    padding-left: 14px;
+    font-size: 16px;
+
+    &-icon {
+        height: 34px;
+        width: 34px;
+        border: 2px solid #0030AE;
+        border-radius: 50%;
+        padding: 3px;
+        margin-left: 14px;
+    }
+}

@@ -1,0 +1,67 @@
+@import "~src/lib/styles/base.scss";
+
+.header {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 12px;
+    background-color: white;
+    border-bottom: 1px solid rgba(13, 16, 23, 0.24);
+    position: sticky;
+    top: 0;
+    right: 0;
+    height: 50px;
+    
+    &-logo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 12px 24px;
+
+        @media screen and (max-width: 767px) {
+            padding: 12px 0px;
+        }
+    
+        &__icon {
+          height: 24px;
+          width: 24px;
+          margin-right: 10px;
+        }
+    
+        &__title {
+          font-size: 18px;
+          font-weight: bold;
+        }
+    }
+
+    &__connect {
+        font-size: 36px;
+        font-weight: bold;
+    }
+
+    &__link {
+        color: black;
+        font-weight: 600;
+        text-decoration: none;
+
+        &:hover {
+            color: black;
+            text-decoration: underline;
+        }
+    }
+
+    .hamburger-btn {
+        border: none;
+        background: transparent;
+
+        &__line {
+            width: 24px;
+            height: 2px;
+            background-color: black;
+            margin: 6px 0;
+        }
+    }
+}

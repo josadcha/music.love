@@ -1,0 +1,36 @@
+.player {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    padding: 2px 12px;
+    background-color: #efefef;
+    justify-content: space-between;
+
+    @media screen and (min-width: 768px) {
+        left: 300px !important;
+    }
+
+    &-btn {
+        height: 42px;
+        width: 42px;
+    }
+
+    &-image {
+        height: 40px;
+        width: 40px;
+        margin: auto 12px auto 0px;
+    }
+
+    &-song {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &--title {
+            font-size: 16px;
+        }
+    }
+}

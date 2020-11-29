@@ -1,0 +1,25 @@
+$main-color: #142DDE;
+$cta-color: #fff;
+$cta-secondary: #7d7d7d;
+$color-text: #0D1017;
+
+@mixin children-row-margin($size: 0.5em) {
+    > * {
+        &:not(:last-child) {
+            margin-right: $size;
+        }
+    }
+}
+
+// @include ;
+@mixin children-column-margin($size: 0.5em) {
+    > * {
+        &:not(:last-child) {
+            margin-bottom: $size;
+        }
+    }
+}
+
+a {
+    text-decoration: none;
+}

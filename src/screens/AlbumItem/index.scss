@@ -1,0 +1,60 @@
+@import "~src/lib/styles/base.scss";
+
+.album-item-page__content {
+    display: flex;
+    flex-direction: row;
+
+    &-image {
+        height: 450px;
+        width: 450px;
+    }
+
+    @media screen and (max-width: 767px) {
+        flex-direction: column !important;
+        &-image {
+            width: 100% !important;
+            height: auto !important;
+        }
+
+    }
+
+    .column {
+        margin-right: 36px;
+        display: flex;
+        flex-direction: column;
+        width: max-content;
+        text-align: left;
+
+        @media screen and (max-width: 767px) {
+            width: 100% !important;
+            margin-right: 0 !important;
+            margin-bottom: 16px;
+
+            .title {
+                font-size: 24px !important;
+                margin-bottom: 4px !important;
+            }
+
+            .colored {
+                font-size: 20px !important;
+            }
+        }
+
+        .title {
+            font-size: 36px;
+            margin-bottom: 8px;
+        }
+
+        .colored {
+            font-size: 24px;
+            color: $main-color;
+            margin-bottom: 12px;
+        }
+
+        .songs {
+            margin-top: 36px;
+            border-top: 1px solid rgba(13, 16, 23, 0.24);
+            margin-bottom: 36px;
+        }
+    }
+}
